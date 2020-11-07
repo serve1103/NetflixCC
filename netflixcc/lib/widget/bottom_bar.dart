@@ -7,7 +7,7 @@ class Bottom extends StatelessWidget {
     return Container(
       color: Colors.black,
       child: Container(
-        height: 50,
+        height: 60,
         child: TabBar(
           labelColor: Colors.white,
           unselectedLabelColor: Colors.white60,
@@ -22,7 +22,7 @@ class Bottom extends StatelessWidget {
               child: Text(
                 '홈',
                 style: TextStyle(
-                  fontSize: 9,
+                  fontSize: 10,
                 ),
               ),
             ),
@@ -35,7 +35,7 @@ class Bottom extends StatelessWidget {
               child: Text(
                 '검색',
                 style: TextStyle(
-                  fontSize: 9,
+                  fontSize: 10,
                 ),
               ),
             ),
@@ -48,7 +48,7 @@ class Bottom extends StatelessWidget {
               child: Text(
                 '저장한 컨텐츠',
                 style: TextStyle(
-                  fontSize: 9,
+                  fontSize: 10,
                 ),
               ),
             ),
@@ -61,7 +61,7 @@ class Bottom extends StatelessWidget {
               child: Text(
                 '더보기 ',
                 style: TextStyle(
-                  fontSize: 9,
+                  fontSize: 10,
                 ),
               ),
             ),
