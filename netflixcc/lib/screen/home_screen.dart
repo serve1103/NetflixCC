@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:netflixcc/model/model_movie.dart';
 
 class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  //TODO: 영화더미 데이터
+  List<Movie> movies = [
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'http://storage.enuri.info/pic_upload/knowbox_rss/201912/aHR0cDovL3d3dy56ZW5pdGhuZXdzLmNvbS9uZXdzL3Bob3RvLzIwMTkxMi8xMzUzMDBfMTQ4NTA5XzE4NTguanBn',
+      'like': false
+    })
+  ];
+  
   @override
   void initState() {
     // TODO: implement initState
