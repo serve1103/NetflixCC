@@ -1,5 +1,7 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:netflixcc/model/model_movie.dart';
+import 'package:netflixcc/widget/carousel_slider.dart';
 
 class HomeScreen extends StatefulWidget {
   _HomeScreenState createState() => _HomeScreenState();
@@ -11,7 +13,25 @@ class _HomeScreenState extends State<HomeScreen> {
     Movie.fromMap({
       'title': '사랑의 불시착',
       'keyword': '사랑/로맨스/판타지',
-      'poster': 'http://storage.enuri.info/pic_upload/knowbox_rss/201912/aHR0cDovL3d3dy56ZW5pdGhuZXdzLmNvbS9uZXdzL3Bob3RvLzIwMTkxMi8xMzUzMDBfMTQ4NTA5XzE4NTguanBn',
+      'poster': 'Crash_Landing_on_You_poster.jpg',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'Crash_Landing_on_You_poster.jpg',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'Crash_Landing_on_You_poster.jpg',
+      'like': false
+    }),
+    Movie.fromMap({
+      'title': '사랑의 불시착',
+      'keyword': '사랑/로맨스/판타지',
+      'poster': 'Crash_Landing_on_You_poster.jpg',
       'like': false
     })
   ];
@@ -25,7 +45,18 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return TopBar();
+    return ListView(
+      children: <Widget>[
+        Stack(
+          children: <Widget>[
+            CarouselImage(
+              movies: movies,
+            ),
+            TopBar(),
+          ],
+        ),
+      ],
+    );
     //   Container(
     //   child: Center(
     //     child: Text('Home123 '),
@@ -46,8 +77,8 @@ class TopBar extends StatelessWidget {
         children: <Widget>[
           //TODO: 탑바 로고
           //네트워크 이미지를 가져옴
-          Image.network(
-            'https://i1.logomesh.com/570-_-476-_-85-_-i.pinimg.com/originals/60/b9/b1/60b9b11b28fde9cc13dd039ce8514076.png ',
+          Image.asset(
+            'images/netflix_logo.png',
             fit: BoxFit.contain,
             height: 25,
           ),
