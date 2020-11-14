@@ -26,38 +26,40 @@ class _MyAppState extends State<MyApp> {
       home: DefaultTabController(
         length: 4,
         child: Scaffold(
-          body: TabBarView(
-            // TODO: NeverScrollableScrollPhysics
-            // 손가락으로 탭이 넘어가는 것을 방지
-            physics: NeverScrollableScrollPhysics(),
-            children: <Widget>[
-              //TODO: Home Container
-              HomeScreen(),
-              //TODO: Search Container
-              Container(
-                child: Center(
-                  child: Text(
-                    'search',
+          body: Center(
+            child: TabBarView(
+              // TODO: NeverScrollableScrollPhysics
+              // 손가락으로 탭이 넘어가는 것을 방지
+              physics: NeverScrollableScrollPhysics(),
+              children: <Widget>[
+                //TODO: Home Container
+                HomeScreen(),
+                //TODO: Search Container
+                Container(
+                  child: Center(
+                    child: Text(
+                      'search',
+                    ),
                   ),
                 ),
-              ),
-              //TODO: Save Container
-              Container(
-                child: Center(
-                  child: Text(
-                    'saveContent',
+                //TODO: Save Container
+                Container(
+                  child: Center(
+                    child: Text(
+                      'saveContent',
+                    ),
                   ),
                 ),
-              ),
-              //TODO: More Container
-              Container(
-                child: Center(
-                  child: Text(
-                    'more',
+                //TODO: More Container
+                Container(
+                  child: Center(
+                    child: Text(
+                      'more',
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
           bottomNavigationBar: Bottom(),
         ),
