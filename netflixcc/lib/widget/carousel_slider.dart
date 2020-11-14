@@ -123,7 +123,7 @@ class _CarouselImageState extends State<CarouselImage> {
                             fullscreenDialog: true,
                             builder: (BuildContext context) {
                               return DetailScreen(
-                                movie: movies[_currentPage],
+                                movie: movies[_currentPage], 
                                 //https://youtu.be/AE0bZ7w4ZIA?list=PL3ilpnPyonYfl82dvBq5fiDD-d4PkRte3&t=257
                                 //TODO:이어하기
                               );
