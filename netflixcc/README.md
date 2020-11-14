@@ -3,6 +3,7 @@
 NetflixCloneCoding
 
 ## Getting Started
+신동규 왔다감. 
 
 This project is a starting point for a Flutter application.
 
