@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflixcc/screen/home_screen.dart';
+import 'package:netflixcc/screen/more_screen.dart';
 import 'package:netflixcc/widget/bottom_bar.dart';
 
 void main() => runApp(MyApp());
@@ -51,13 +52,7 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
                 //TODO: More Container
-                Container(
-                  child: Center(
-                    child: Text(
-                      'more',
-                    ),
-                  ),
-                ),
+                MoreScreen(),
               ],
             ),
           ),
