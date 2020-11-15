@@ -24,6 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   carousel_slider:
+  #url을 연결해주는 패키지
+  flutter_linkify:
+  url_launcher:
 
 
   # The following adds the Cupertino Icons font to your application.
